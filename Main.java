@@ -1,7 +1,7 @@
-import snake_game.SnakeDriver;
+import snake_game.SnakeGameDriver;
 
 public class Main {
-    public static void main(String[] args){
-        SnakeDriver.main(null);
+    public static void main(String[] args) {
+        SnakeGameDriver.main(null);
     }
 }

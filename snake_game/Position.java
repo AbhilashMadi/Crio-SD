@@ -1,24 +1,30 @@
 package snake_game;
 
 public class Position {
-    int x, y;
+    public final int x;
+    public final int y;
 
     public Position(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-
-        Position position = (Position) obj;
-        return x == position.x && y == position.y;
+    public String toString() {
+        return "(" + this.x + ", " + this.y + ")";
     }
 
-    @Override
-    public String toString() {
-        return "(" + x + ", " + y + ")";
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        } else if (o != null && this.getClass() == o.getClass()) {
+            Position position = (Position)o;
+            return this.x == position.x && this.y == position.y;
+        } else {
+            return false;
+        }
+    }
+
+    public int hashCode() {
+        return 31 * this.x + this.y;
     }
 }
