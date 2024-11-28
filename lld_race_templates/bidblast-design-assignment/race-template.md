@@ -253,7 +253,7 @@
 # Bidding System Flow
 
 ```mermaid
-
+graph TD;
     A[Adding a New Event] --> B[Buying a Bid Set]
     B --> C[Submitting Bids]
     C --> D[Declaring a Winner]
