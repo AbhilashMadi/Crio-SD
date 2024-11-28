@@ -1,14 +1,16 @@
 ## R \_ Requirements
 
 The system allow users to:
-1 - Add reviews and ratings for product
-2 - Upvote/Downvote existing reviews
-3 - View summary of product ratings
-4 - Fetch reviews sorted by:
--- Most Helpful(based on upvote)
--- Most recent
--- Positive First(highest ratings)
--- Negative First(lowest ratings)
+
+1. Add reviews and ratings for product
+2. Upvote/Downvote existing reviews
+3. View summary of product ratings
+4. Fetch reviews sorted by:
+
+- Most Helpful(based on upvote)
+- Most recent
+- Positive First(highest ratings)
+- Negative First(lowest ratings)
 
 ## A \_ APIs
 
@@ -104,21 +106,24 @@ The system allow users to:
   1.User
 
   - Atrributes
+
     - `userId` (primary key)
     - `name`
     - `email`
 
-  2.Product
+    2.Product
 
   - Attributes
+
     - `productId` (primary key)
     - `name`
     - `description`
     - `category`
 
-  3.Review
+    3.Review
 
   - Attributes
+
     - `reviewId` (primary key)
     - `productId` (primary key)
     - `userId` (foreign key)
@@ -128,7 +133,7 @@ The system allow users to:
     - `downvote`
     - `createdAt`
 
-  4.Ratings Summary (derived entity for analytics)
+    4.Ratings Summary (derived entity for analytics)
 
   - Attributes
     - `productId` (foreign key)
