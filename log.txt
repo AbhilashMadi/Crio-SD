@@ -1,0 +1,2 @@
+LogRecord 2024-12-11 19:03:54 [severity=CRITICAL, loggerName=MyLogger, message=This is a critical message.]
+LogRecord 2024-12-11 19:03:54 [severity=CRITICAL, loggerName=MyLogger, message=This is a critical message.]
