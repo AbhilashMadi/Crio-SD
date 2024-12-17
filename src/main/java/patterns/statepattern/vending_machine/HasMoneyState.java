@@ -12,7 +12,6 @@ public class HasMoneyState implements State {
     @Override
     public void insertMoney(int coin) {
         machine.setAmount(machine.getAmount() + coin);
-        machine.setCurrentState(VendingState.HAS_MONEY);
     }
 
     @Override

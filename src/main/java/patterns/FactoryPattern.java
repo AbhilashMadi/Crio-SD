@@ -38,7 +38,7 @@ enum DocumentType {
     PDF, XL, WORD;
 }
 
-//// creation of a factory method which provides the required object
+// creation of a factory method which provides the required object
 //abstract class DocumentCreator {
 //    public static Document createDocument(DocumentType type){
 //        return switch(type){
