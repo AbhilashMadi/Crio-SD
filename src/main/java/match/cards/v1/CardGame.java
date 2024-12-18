@@ -15,7 +15,7 @@ public class CardGame implements Game {
     public CardGame(int numberOfPlayers) {
         // Validate the number of players during game initialization
         if (numberOfPlayers < 2 || numberOfPlayers > 4) {
-            throw new IllegalArgumentException("Game supports 2 to 4 players only.");
+            throw new IllegalArgumentException("IGame supports 2 to 4 players only.");
         }
 
         this.players = new ArrayList<>();
@@ -29,7 +29,7 @@ public class CardGame implements Game {
 
     @Override
     public void start() {
-        System.out.println("Starting Game...");
+        System.out.println("Starting IGame...");
         System.out.println("Shuffling Cards...");
         deck.shuffle();
 
@@ -134,7 +134,7 @@ public class CardGame implements Game {
             case KING:
             {
                 reverseOrder = !reverseOrder;
-                System.out.println("Game turn order reversed!");
+                System.out.println("IGame turn order reversed!");
                 break;
             }
             case QUEEN:

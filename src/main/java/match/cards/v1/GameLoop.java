@@ -20,9 +20,9 @@ public class GameLoop {
     private void concludeGame() {
         Player winner = game.getWinner();
         if (winner != null) {
-            System.out.println("Game Over! Winner: " + winner.getName());
+            System.out.println("IGame Over! Winner: " + winner.getName());
         } else {
-            System.out.println("Game Over! It's a draw.");
+            System.out.println("IGame Over! It's a draw.");
         }
     }
 }
