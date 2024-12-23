@@ -61,10 +61,10 @@ public class HomeAutomationSystem {
             SmartHomeDevice device = smartHomeDevices.get(deviceIdentifier);
             switch (commandValue.toLowerCase()) {
                 case "on":
-                    device.turnOn();
+//                    device.turnOn();
                     break;
                 case "off":
-                    device.turnOff();
+//                    device.turnOff();
                     break;
                 default:
                     System.out.println("Sorry, Invalid Command Description");
@@ -82,7 +82,7 @@ public class HomeAutomationSystem {
         // System.out.println(deviceIdentifier);
         smartHomeDevices.forEach((deviceIdentifier, device) -> {
             if (deviceIdentifier.endsWith("@" + location) && isDeviceConnectedToInterface(deviceIdentifier, activationKeyword)) {
-                System.out.println(deviceIdentifier.split("@")[0] + " : " + device.getStatus());
+//                System.out.println(deviceIdentifier.split("@")[0] + " : " + device.getStatus());
             }
         });
     }
@@ -156,7 +156,7 @@ public class HomeAutomationSystem {
         deviceInterfaceMapping.forEach((deviceIdentifier, connectedInterfaces) -> {
             if (isInterfaceConnectedToDevice(activationKeyword, connectedInterfaces)) {
                 SmartHomeDevice device = smartHomeDevices.get(deviceIdentifier);
-                device.turnOn();
+//                device.turnOn();
             }
         });
         System.out.println("Connected devices turned on");
@@ -166,7 +166,7 @@ public class HomeAutomationSystem {
         deviceInterfaceMapping.forEach((deviceIdentifier, connectedInterfaces) -> {
             if (isInterfaceConnectedToDevice(activationKeyword, connectedInterfaces)) {
                 SmartHomeDevice device = smartHomeDevices.get(deviceIdentifier);
-                device.turnOff();
+//                device.turnOff();
             }
         });
         System.out.println("Connected devices turned off");
@@ -177,7 +177,7 @@ public class HomeAutomationSystem {
             if (isInterfaceConnectedToDevice(activationKeyword, connectedInterfaces)) {
                 SmartHomeDevice device = smartHomeDevices.get(deviceIdentifier);
                 if (device instanceof Light) {
-                    device.turnOff();
+//                    device.turnOff();
                 }
             }
         });

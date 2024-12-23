@@ -26,9 +26,9 @@ public class Alexa implements InterfaceDevice {
         System.out.println(name + " sending command: " + command);
 
         if ("on".equalsIgnoreCase(command)) {
-            device.turnOn();
+//            device.turnOn();
         } else if ("off".equalsIgnoreCase(command)) {
-            device.turnOff();
+//            device.turnOff();
         } else {
             throw new IllegalArgumentException("Invalid command");
         }

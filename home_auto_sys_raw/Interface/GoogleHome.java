@@ -26,9 +26,9 @@ public class GoogleHome implements InterfaceDevice {
         System.out.println(name + " received command: " + command);
 
         if ("off".equalsIgnoreCase(command)) {
-            device.turnOff();
+//            device.turnOff();
         } else if ("on".equalsIgnoreCase(command)) {
-            device.turnOn();
+//            device.turnOn();
         } else {
             throw new IllegalArgumentException("Unknown command sent: " + command);
         }

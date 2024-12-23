@@ -62,7 +62,7 @@ class StockClient implements Observer {
     }
 }
 
-// Main Class
+// App Class
 public class StockMarket {
     public static void main(String[] args) {
         StockMarketSubject stockMarket = new StockMarketSubject();

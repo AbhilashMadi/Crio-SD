@@ -2,7 +2,7 @@ package smart_home.smartHome;
 
 import home_auto_sys_raw.SmartHome.SmartHomeDevice;
 
-public class GenericElectricDevice implements SmartHomeDevice {
+public class GenericElectricDevice {
     private String deviceName;
     private String location;
 

@@ -4,6 +4,9 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/smart_home" />
+      <excludeFolder url="file://$MODULE_DIR$/vending-machine(state pattern)/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/whatsapp-status/out" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
